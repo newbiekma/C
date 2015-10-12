@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <math.h>
+
+void input(float x[100][100], int p, int q);
+void output(float x[100][100], int p, int q);
+
+int main()
+{
+    float a[100][100],b[100][100],c[100][100];
+    int n,m,i,j;
+    printf("\nNhap vao kich thuc n x m  : ");
+    scanf("%d %d",&n,&m);
+    printf("\nNhap A");
+    input(a,n,m);
+    printf("\nNhap B");
+    input(b,n,m);
+    for (i=0; i<n; i++)
+        for (j=0;  j<m; j++)
+        {
+        	c[i][j]=a[i][j]+b[i][j];
+        }
+    printf("\nMA TRAN A\n");
+    output(a,n,m);
+    printf("\nMA TRAN B\n");
+    output(b,n,m);
+    printf("\nMA TRAN C\n");
+    output(c,n,m);
+    getch();
+    return (0);
+}
+
+void input(float x[100][100], int p, int q)
+{
+    for (int i=0; i<p; i++)
+        for (int j=0;  j<q; j++)
+        {
+            printf("\n[%d,%d] = ",i,j);
+            scanf("%f",&x[i][j]);
+        }
+}
+
+void output(float x[100][100], int p, int q)
+{
+    for (int i=0; i<p; i++)
+    {
+        printf("\n");
+        for (int j=0;  j<q; j++)
+        {
+            printf("%.5f      ",x[i][j]);
+        }
+    }
+}

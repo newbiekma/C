@@ -1,0 +1,28 @@
+MA TRAN A
+1 2
+1   2   
+
+MA TRAN B
+2 2
+1   1   
+1   1   
+
+MA TRAN C
+1 2
+1   1   
+
+MA TRAN A
+2 2
+1   2   
+3   4   
+
+MA TRAN B
+2 2
+1   0   
+0   1   
+
+MA TRAN C
+2 2
+1   2   
+3   4   
+
